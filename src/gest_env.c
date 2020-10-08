@@ -48,7 +48,7 @@ void unset_env(basic *all, char *str)
     all->cenv[line] = " ";
 }
 
-cases check_senv(basic *all)
+bool check_senv(basic *all)
 {
     if (count_rows(all->line, ' ') > 3) {
         my_putstr("setenv: Too many arguments.\n");

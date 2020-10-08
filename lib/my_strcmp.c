@@ -7,7 +7,7 @@
 
 #include "my.h"
 
-cases my_strcmp(char const *s1, char const *s2)
+bool my_strcmp(char const *s1, char const *s2)
 {
     int x = 0;
     int len = my_strlen(s2);

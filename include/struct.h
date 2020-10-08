@@ -5,11 +5,6 @@
 ** struct
 */
 
-typedef enum {
-    false,
-    true
-}cases;
-
 typedef struct {
     char **cenv;
     char **arr;

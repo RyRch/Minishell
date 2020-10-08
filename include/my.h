@@ -12,6 +12,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <stdbool.h>
 #include "struct.h"
 
 void my_putchar(char c);
@@ -48,7 +49,7 @@ int *my_intdup(int *src, int len);
 
 char *my_strdup(char const *src);
 
-cases my_strcmp(char const *s1, char const *s2);
+bool my_strcmp(char const *s1, char const *s2);
 
 char *space_tab(char *str);
 
@@ -60,9 +61,9 @@ int pos_line(basic *all, char *str);
 
 char *recup_line(basic *all, char *str);
 
-cases gest_builtins(basic *all);
+bool gest_builtins(basic *all);
 
-cases check_builtins(basic *all);
+bool check_builtins(basic *all);
 
 int lines_cenv(basic *all);
 
@@ -82,4 +83,4 @@ char *check_access(basic *all);
 
 void gest_shell(basic *all);
 
-cases check_senv(basic *all);
+bool check_senv(basic *all);

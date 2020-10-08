@@ -23,7 +23,7 @@ void loop(basic *all, char **env)
     }
 }
 
-cases gest_builtins(basic *all)
+bool gest_builtins(basic *all)
 {
     if (my_strcmp(all->line, "exit\n") == true) {
         my_putstr("exit\n");
@@ -36,7 +36,7 @@ cases gest_builtins(basic *all)
     return (check_builtins(all));
 }
 
-cases check_builtins(basic *all)
+bool check_builtins(basic *all)
 {
     if (my_strcmp(all->line, "env\n") == true
         || my_strcmp(all->line, "setenv\n") == true) {
